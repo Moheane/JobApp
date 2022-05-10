@@ -11,8 +11,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     
-      
-      return Container(
+
+      return Column(
+
+
+
+        children: [
+          Container(
 
         color: Colors.deepPurpleAccent,
         height: 70,
@@ -49,10 +54,68 @@ class _HomeState extends State<Home> {
 
 
           const Expanded( child: 
-           ElevatedButton(onPressed: null, child: Text('Enter'))
+           ElevatedButton(
+             onPressed: null,
+            child: Text('Enter', style: TextStyle(color: Colors.amberAccent)),
+             
+           )
           )
         ],
       ),
+      ),
+
+
+
+
+
+
+
+
+
+
+
+      Container(
+
+        
+
+        color: Colors.indigo,
+            child: 
+            Row(
+              verticalDirection: VerticalDirection.down,
+              mainAxisSize: MainAxisSize.max,
+              
+              children: [
+                
+                Container(
+            
+                  width: 250, 
+                  child: 
+                  Column(
+                    children: [
+                      Container(
+                        height: 158,
+                        color: Colors.black12,
+                      ),Container(
+                        height: 158,
+                        color: Colors.blue,
+                      )
+                      ,Container(
+                        height: 158,
+                        color: Colors.lightGreen,
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.orangeAccent,
+                   height: 200,
+                )
+              ],
+              
+              
+            ),
+      )
+        ],
       );
     
   }
