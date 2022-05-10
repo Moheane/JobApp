@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
        
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: Landing()
     );
@@ -42,8 +42,10 @@ class _LandingState extends State<Landing> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('JobMaster'),
-        foregroundColor: Colors.indigoAccent,
+        foregroundColor: Colors.white,
       ),
+
+      body: widgetOptions.elementAt(_selectedIndex),
 
       bottomNavigationBar: BottomNavigationBar(
 
@@ -56,9 +58,11 @@ class _LandingState extends State<Landing> {
             _selectedIndex = index;
           });
         },
-        unselectedItemColor: Colors.lightBlue,
-        selectedItemColor: Colors.orange,
+        unselectedItemColor: Colors.orangeAccent,
+        selectedItemColor: Colors.green,
         backgroundColor: Colors.black,
+
+        
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
