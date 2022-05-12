@@ -147,7 +147,7 @@ class _HomeState extends State<Home> {
                          Column(
                        
                        children: const [
-                          Text(' LATEST NEWS', style: TextStyle(backgroundColor: Colors.lightGreen)),
+                          Text(' LATEST JOBS', style: TextStyle(backgroundColor: Colors.lightGreen)),
                         
                             Text('12:24', textAlign: TextAlign.end, style: TextStyle(color: Colors.lime ,backgroundColor: Colors.indigo, fontSize: 10)),
 
@@ -174,8 +174,138 @@ class _HomeState extends State<Home> {
                            children: [
                             Container(
                               margin: const EdgeInsets.all(2),
-                              height: 200,
+                              
+                              padding: const EdgeInsets.all(1.0),
                               color: Colors.orange,
+
+                              child: Column(
+                                
+                                children: [
+                                  Wrap(
+                                    spacing: 2,
+                                    runSpacing: 2,
+                                     
+                                     verticalDirection: VerticalDirection.down,
+                                    children: const [
+                                      
+                                         
+                                  Padding(padding: EdgeInsets.all(2),
+
+                                  child: Text('Financial Manager', style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    decoration: TextDecoration.underline,
+                                    decorationThickness: 2,
+                                    decorationColor: Colors.black,
+                                    color: Colors.black, backgroundColor: Colors.transparent
+                                  ),),
+                                  ),
+                                          
+                                      
+                                      // const Text('Dategfdsdgghsgh',overflow: TextOverflow.fade, softWrap: true, )
+                                    ],
+                                  ),
+                                  const SizedBox(height: 3),
+
+                                  const Text('Closing Date: 3 May 3032', style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black54,
+                                    fontSize: 10,backgroundColor: Colors.lightGreenAccent
+                                  )),
+                                  const SizedBox(height: 5),
+                                  const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Text('COMPANY:', style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,backgroundColor: Colors.grey
+                                  )),),
+                                  const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Center(
+                                    child: Text('ABC Consulting', style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 12,backgroundColor: Colors.transparent
+                                  )),
+                                  )),
+
+                                  const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Text('EXPERIENCE:', style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,backgroundColor: Colors.grey
+                                  )),),
+
+                                   const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Center(
+                                    child: Text('1-2 Years', style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 12,backgroundColor: Colors.transparent
+                                  )),
+                                  )),
+
+
+                                  const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Text('LOCATION:', style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,backgroundColor: Colors.grey
+                                  )),),
+
+                                  const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Center(
+                                    child: Text('Johhanesburg', style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 12,backgroundColor: Colors.transparent
+                                  )),
+                                  )),
+
+
+                                  const Padding(padding: EdgeInsets.all(3),
+                                  
+                                  child: Text('SUMMARY::', style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,backgroundColor: Colors.grey
+                                  )),),
+
+
+                                   Container(
+                                     padding: const EdgeInsets.all(2.5),
+                              child: const Text(
+                                'zgfgxfhgdhxhxgfhxdhxcDGFGSGSEGERGEAGFDGESGEGghxdthxcfghhfghh',
+                              ),
+                              decoration: const BoxDecoration(
+                                border: Border(
+                                  bottom: BorderSide(color: Colors.black),
+                                ),
+                              ),
+                            ),
+
+                             
+
+                                  
+                                  Row(
+
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children:  [
+                                      ElevatedButton(onPressed: null,
+                                      
+
+                                      style: ButtonStyle(
+                                        backgroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 24, 170, 97)),
+                                      ),
+                                      
+                                      
+                                      child: 
+                                      const Text('Apply')),
+                                      
+                                      
+                                  
+                                    ],
+                                  )
+                                ],
+                              ) 
+                              ,
                             ),Container(
                               height: 200,
                                                             margin: const EdgeInsets.all(2),
