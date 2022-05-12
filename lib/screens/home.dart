@@ -25,7 +25,6 @@ class _HomeState extends State<Home> {
         child: 
         Row(
 
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
 
           
@@ -81,8 +80,6 @@ class _HomeState extends State<Home> {
         color: Colors.indigo,
             child: 
             Row(
-              verticalDirection: VerticalDirection.down,
-              mainAxisSize: MainAxisSize.max,
               
               children: [
                 
@@ -94,21 +91,123 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         height: 158,
-                        color: Colors.black12,
+                        color: Colors.limeAccent,
+                        child: 
+                        Center(
+                          child: 
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Text('EXPLORE JOBS ON OUR APP!'),
+                            ElevatedButton(onPressed: null, child: Text('EXPLORE'))
+                          ],
+                        ),
+                        )
                       ),Container(
                         height: 158,
                         color: Colors.blue,
+
+                        child: 
+                        Center(
+                          child: 
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Text('DOWNLOAD YOUR CV!'),
+                            ElevatedButton(onPressed: null, child: Text('EXPLORE'))
+                          ],
+                        ),
+                        ),
                       )
                       ,Container(
                         height: 158,
                         color: Colors.lightGreen,
+                        child: 
+                        Center(
+                          child: 
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Text('COMPLAINTS/COMLIMENTS?'),
+                            ElevatedButton(onPressed: null, child: Text('MESSAGE US!'))
+                          ],
+                        ),
+                        ),
                       )
                     ],
                   ),
                 ),
                 Container(
                   color: Colors.orangeAccent,
-                   height: 200,
+                   height: 350,
+                   width: 150,
+                   
+                     child:   ListView(
+                       children: [
+                         Column(
+                       
+                       children: const [
+                          Text(' LATEST NEWS', style: TextStyle(backgroundColor: Colors.lightGreen)),
+                        
+                            Text('12:24', textAlign: TextAlign.end, style: TextStyle(color: Colors.lime ,backgroundColor: Colors.indigo, fontSize: 10)),
+
+                         ],
+                     ),
+
+                     Container(
+                       
+                       color: Colors.lightBlue,
+                       margin: const EdgeInsets.all(2.0),
+
+                       child: SingleChildScrollView(
+                         
+                         child: Column(
+                           children: [
+                            Container(
+                       
+                       color: Colors.deepPurple,
+                       margin: const EdgeInsets.all(2.0),
+
+                       child: SingleChildScrollView(
+                         
+                         child: Column(
+                           children: [
+                            Container(
+                              margin: const EdgeInsets.all(2),
+                              height: 200,
+                              color: Colors.orange,
+                            ),Container(
+                              height: 200,
+                                                            margin: const EdgeInsets.all(2),
+
+                              color: Colors.orange,
+                            ),
+                            Container(
+                              height: 200,
+                                                            margin: const EdgeInsets.all(2),
+
+                              color: Colors.orange,
+                            )
+                           ],
+                         ),
+                       ),
+                      //  decoration: const BoxDecoration(
+                      //    shape: BoxShape.rectangle
+                      //  ),
+                     ),
+                     
+                     
+                           ],
+                         ),
+                       ),
+                      //  decoration: const BoxDecoration(
+                      //    shape: BoxShape.rectangle
+                      //  ),
+                     ),
+                     
+                       ],
+                     )
+                   
                 )
               ],
               
@@ -119,4 +218,6 @@ class _HomeState extends State<Home> {
       );
     
   }
+
+  
 }
